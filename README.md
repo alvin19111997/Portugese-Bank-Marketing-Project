@@ -1,34 +1,24 @@
-# 📊 Portuguese Bank Marketing Project
+# Portuguese Bank Marketing
 
-This project is part of my internship, focused on predicting whether a customer will subscribe to a term deposit product.
+## Problem
+Predict whether a client will subscribe to a term deposit from the Portuguese bank marketing campaign data.
 
-It includes complete data preprocessing, exploratory data analysis (EDA), model building, evaluation, and actionable business suggestions based on data insights.
+## Data
+The project uses Portuguese Bank Marketing data. The repository currently contains the analysis notebook; the dataset is not included in the repository root.
 
----
+## Approach
+- Preprocessed the data and handled class imbalance.
+- Compared candidate models and used XGBoost for the final model.
+- Tuned the model with GridSearchCV.
 
-## 🔍 Models Evaluated
+## Result
+The model reached **84.53% accuracy**.
 
-- Logistic Regression  
-- Decision Tree  
-- Random Forest  
-- Gradient Boosting  
-- **XGBoost (Selected Model)**
+## How to Run
+1. Clone this repository.
+2. Install Python, Jupyter, pandas, NumPy, scikit-learn, and XGBoost.
+3. Open and run `PortugeseBankMarketing.ipynb`.
+4. Place the expected dataset in the location referenced by the notebook; data files are not included here.
 
----
-
-## ✅ Key Techniques Used
-
-- Handling missing values
-- Categorical encoding
-- Feature scaling
-- Class imbalance treatment
-- GridSearchCV for hyperparameter tuning
-
----
-
-## 🏆 Best Model: XGBoost
-
-Chosen for its balance between precision, recall, and F1-score — and better generalization on unseen data.
-
----
-
+## Tech Stack
+Python, pandas, NumPy, scikit-learn, XGBoost, GridSearchCV, Jupyter Notebook
